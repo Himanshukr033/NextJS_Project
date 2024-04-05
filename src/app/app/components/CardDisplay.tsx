@@ -1,6 +1,12 @@
 import React from "react";
 
-const Card = ({ number, title, description }) => {
+interface CardProps {
+  number: string; 
+  title: string;
+  description: string;
+}
+
+const Card: React.FC<CardProps> = ({ number, title, description }) => {
   return (
     <div className="flex justify-center w-full max-w-md rounded-3xl backdrop-blur-lg" 
     style={{

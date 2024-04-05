@@ -27,10 +27,10 @@ const Description = () => {
           </section>
         </div>
         <aside className="flex flex-col ml-5 max-md:ml-0 " >
-          <div className="flex grow gap-3 justify-end px-6 py-4 mt-48 text-lg font-medium text-white whitespace-nowrap backdrop-blur-lg rounded-[32px] max-md:pl-5 max-md:mt-10"
+          <div className="flex grow gap-3 justify-end px-4 py-4 mt-48 text-lg font-medium text-white whitespace-nowrap backdrop-blur-lg rounded-[32px] max-md:pl-5 max-md:mt-10"
           style={{
             maxHeight: '56px',
-            maxWidth:'200px',
+            maxWidth:'220px',
             background: "linear-gradient(to bottom, rgba(35, 36, 41, 0.7) 70%, rgba(17, 16, 22, 0.9) 100%)",
             boxShadow: "1px 1px 1px rgba(58, 57, 63, 1)",
           }}>
@@ -39,10 +39,8 @@ const Description = () => {
 
             <Image 
               src={arrow} 
-              alt="Documentation icon" 
-              width={24} 
-              height={24} 
-              className="shrink-0" 
+              alt="Documentation icon"
+              style={{width:24, height:24, aspectRatio:1}}
               />
             </button>
           </div>

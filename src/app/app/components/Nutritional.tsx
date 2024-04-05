@@ -9,7 +9,12 @@ const nutritionalValues = [
   { label: "Dev Fee :-", value: "8%" },
 ];
 
-const NutritionalValueItem = ({ label, value }) => (
+interface Nutir {
+  label: string; 
+  value: string;
+}
+
+const NutritionalValueItem: React.FC<Nutir> = ({label, value }) => (
   <div className="flex gap-5 justify-between mt-8 max-md:flex-wrap max-md:max-w-full">
     <div className="text-zinc-500">{label}</div>
     <div className="text-right text-white">{value}</div>

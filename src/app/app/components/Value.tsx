@@ -21,7 +21,17 @@ function Value() {
     },
   ];
 
-  const ValueCard = ({ value, altText }) => (
+  interface Value {
+    value: string; 
+    altText: string;
+  }
+  interface LabelValue {
+    label: string;
+    value: string; 
+    altText: string;
+  }
+
+  const ValueCard: React.FC<Value> = ({ value, altText }) => (
     <div className="flex flex-col justify-center items-start px-3 py-2 mt-2 text-xl font-semibold whitespace-nowrap rounded-2xl border border-solid border-neutral-600 text-zinc-50 max-md:pr-5 max-md:max-w-full">
       <div className="flex gap-2">
         <Image
@@ -35,7 +45,7 @@ function Value() {
     </div>
   );
 
-  const LabelValue = ({ label, value, altText }) => (
+  const LabelValue: React.FC<LabelValue> =({ label, value, altText }) => (
     <>
       <div className="flex gap-0 justify-between mt-3.5 whitespace-nowrap max-md:flex-wrap">
         <div className="flex-1 text-zinc-500 max-md:max-w-full">{label}</div>
