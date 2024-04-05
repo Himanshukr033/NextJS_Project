@@ -1,10 +1,7 @@
 import React from 'react';
 import logo from "../../../../assets/logo.png";
 import Image from "next/image";
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap')
-</style>
+import { Urbanist } from 'next/font/google';
 
 function Value() {
   const data = [
@@ -44,7 +41,7 @@ function Value() {
           alt={altText}
           className="shrink-0 w-8 border border-solid aspect-square border-zinc-800"
         />
-        <div className="my-auto font-semibold text-xl" style={{ fontFamily: 'Urbanist, sans-serif' }}>{value}</div>
+        <div className="my-auto font-semibold text-xl" style={{ fontFamily: "Urbanist" }}>{value}</div>
       </div>
     </div>
   );
