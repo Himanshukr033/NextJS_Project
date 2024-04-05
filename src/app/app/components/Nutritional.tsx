@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../../../assets/logo.png"
+import info from "../../../../assets/info.png"
 
 const nutritionalValues = [
   { label: "Daily Return :-", value: "8%" },
@@ -29,15 +30,17 @@ const Nutritional = () => {
      className="flex flex-col justify-center px-8 py-8 rounded-3xl  backdrop-blur-lg  max-md:px-5 max-md:max-w-full">
         <header className="flex gap-4 justify-between px-px text-2xl font-bold text-white max-md:flex-wrap max-md:max-w-full">
           <h2>Nutritional Values</h2>
+          <button>
+
           <Image
-            src={logo}
+            src={info}
             alt=""
             width={24} 
             height={24} 
             className="shrink-0 my-auto"
             priority 
-            
-          />
+            />
+            </button>
         </header>
         <hr className="shrink-0 mt-4 h-px border border-solid bg-neutral-800 opacity-50 border-neutral-700 max-md:max-w-full" />
         {nutritionalValues.map((item, index) => (

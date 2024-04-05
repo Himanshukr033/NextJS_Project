@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../../../assets/logo.png";
+import copy from "../../../../assets/copy.png";
 import Image from "next/image";
 
 function InviteFriendsSection() {
@@ -36,8 +37,8 @@ function InviteFriendsSection() {
       <div className="flex gap-5 justify-between px-3 py-2 mt-8 text-sm rounded-2xl border border-solid border-neutral-600 text-zinc-500 max-md:flex-wrap max-md:max-w-full">
         <div className="my-auto">referral code</div>
         <Image
-          loading="lazy"
-          src={logo}
+          priority 
+          src={copy}
           alt=""
           className="shrink-0 w-8 aspect-square stroke-[1.333px] stroke-neutral-800"
         />

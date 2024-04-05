@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
       </div>
         <div className="flex flex-col md:ml-4 text-overflow: clip;" style={{height:150,  textJustify:'inter-word'}}>
           <h3 className="text-2xl font-bold text-zinc-50">{title}</h3>
-          <p className="mt-2 text-base text-white md:max-h-28  text-zinc-500 pb-4">{handleOverflow(description, 104)}</p>
+          <p className="mt-2 text-base text-white md:max-h-28  text-zinc-500 pb-4">{handleOverflow(description, 130)}</p>
         </div>
       </div>
     </div>
