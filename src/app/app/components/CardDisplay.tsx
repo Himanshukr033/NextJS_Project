@@ -11,7 +11,6 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
     <div className="flex justify-center w-full max-w-md rounded-3xl backdrop-blur-lg" 
     style={{
       background: "linear-gradient(to bottom, rgba(35, 36, 41, 0.5), rgba(17, 16, 22, 0.4) 100%)",
-            boxShadow: "1px 1px 1px rgba(58, 57, 63, 0.5)",
       textJustify: "inter-word", textDecoration:'justify' ,padding:'40px 24px 17px 24px',boxShadow: "rgba(38, 38, 38, 0.5) 0px 6px 24px 0px, rgba(40, 40, 40, 0.9) 0px 0px 0px 1px"}}>
       
       <div className="flex flex-col justify-center w-full md:flex-row md:items-center" >
