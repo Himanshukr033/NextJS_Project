@@ -21,6 +21,7 @@ function InviteFriendsSection() {
           placeholder="Email address"
           className="my-auto text-sm text-zinc-500"
           aria-label="Email address"
+          style={{backgroundColor:"transparent"}}
         />
         <button
           type="submit"
