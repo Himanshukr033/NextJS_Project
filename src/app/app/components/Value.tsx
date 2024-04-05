@@ -16,7 +16,7 @@ function Value() {
     },
     {
       label: "Your Farming",
-      value: "FARMING",
+      value: "0.000",
       altText: "Farming icon",
     },
   ];

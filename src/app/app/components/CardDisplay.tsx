@@ -5,18 +5,33 @@ interface CardProps {
   title: string;
   description: string;
 }
-
+interface OverflowProps {
+  text: string; 
+}
 const Card: React.FC<CardProps> = ({ number, title, description }) => {
+
+  const handleOverflow = (text: string, maxLength: number) => {
+    
+    if (text.length <= maxLength) {
+      return text;
+    } else {
+      
+      return text.slice(0, maxLength) + "...";
+    }
+  };
   return (
-    <div className="flex justify-center w-full max-w-md rounded-3xl backdrop-blur-lg" 
+    <div className="flex justify-center w-full rounded-3xl backdrop-blur-lg" 
     style={{
-      background: "linear-gradient(to bottom, rgba(35, 36, 41, 0.5), rgba(17, 16, 22, 0.4) 100%)",
+      background: "linear-gradient(to bottom, rgba(36, 35, 41, 1), rgba(17, 16, 22, 1) 100%)",
+      alignItems:"center",
+      overflow:"hidden",
+      textOverflow: "ellipsis",
       textJustify: "inter-word", textDecoration:'justify' ,padding:'40px 24px 17px 24px',boxShadow: "rgba(38, 38, 38, 0.5) 0px 6px 24px 0px, rgba(40, 40, 40, 0.9) 0px 0px 0px 1px"}}>
       
-      <div className="flex flex-col justify-center w-full md:flex-row md:items-center" >
-      <div className="px-4"
+      <div className="flex flex-col justify-center w-full md:flex-row items-center" >
+      <div className="pl-2 p2-3 "
         style={{
-          background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) , rgba(47, 30, 55, 0.0))",
+          background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%  , rgba(17, 16, 22, 0.9) 68%)",
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           color: "transparent",
@@ -27,9 +42,9 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
         }}>
         {number} 
       </div>
-        <div className="flex flex-col md:ml-4 pb-4" style={{height:150, overflow:"hidden", textJustify:'inter-word'}}>
-          <h3 className="text-2xl font-bold text-zinc-50 pt-4">{title}</h3>
-          <p className="mt-2 text-base text-white md:max-h-28  text-zinc-500">{description}</p>
+        <div className="flex flex-col md:ml-4 text-overflow: clip;" style={{height:150,  textJustify:'inter-word'}}>
+          <h3 className="text-2xl font-bold text-zinc-50">{title}</h3>
+          <p className="mt-2 text-base text-white md:max-h-28  text-zinc-500 pb-4">{handleOverflow(description, 104)}</p>
         </div>
       </div>
     </div>

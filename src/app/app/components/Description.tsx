@@ -33,6 +33,7 @@ const Description = () => {
             maxWidth:'220px',
             background: "linear-gradient(to bottom, rgba(35, 36, 41, 0.7) 70%, rgba(17, 16, 22, 0.9) 100%)",
             boxShadow: "1px 1px 1px rgba(58, 57, 63, 1)",
+            alignItems:"center"
           }}>
             <div className="grow my-auto">Documentation</div>
             <button>
@@ -40,7 +41,7 @@ const Description = () => {
             <Image 
               src={arrow} 
               alt="Documentation icon"
-              style={{width:24, height:24, aspectRatio:1}}
+              style={{width:28, height:20, aspectRatio:1}}
               />
             </button>
           </div>
