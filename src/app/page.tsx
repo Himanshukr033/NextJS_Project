@@ -26,12 +26,15 @@ export default function Home() {
       <Description />
       <div style={{ display: "flex", flexDirection: "column", padding:'30px 20px', gap:'30px',
       borderRadius:'20px',
-       background: "linear-gradient(to bottom, rgba(35, 34, 40, 0.6) , rgba(18, 17, 23, 0.31))",}}>
+      background: "radial-gradient(116.56% 116.56% at 52.31% -19.68%, #232228 0%, rgba(18, 17, 23, 0.31) 100%)",
+      }}>
         <Cards />
         <div className="md:flex-row flex-col"style={{ 
           display: "flex", justifyContent:"space-between", gap:'50px', borderRadius:'20px',
-          background: "linear-gradient(to bottom, rgba(36, 35, 41, 0.3) , rgba(17, 16, 22, 0.31))",}}>
-          <div style={{ display: "flex flex-1", flexDirection: "column" }}>
+          // background: "linear-gradient(to bottom, rgba(36, 35, 41, 0.3) , rgba(17, 16, 22, 0.31))",
+          
+}}>
+          <div style={{ display: "flex flex-1", flexDirection: "column",background: "radial-gradient(114.61% 114.61% at 50% 0%, #242329 0%, #111016 100%)", }}>
             <Nutritional />
             <InviteFriendsSection />
           </div>

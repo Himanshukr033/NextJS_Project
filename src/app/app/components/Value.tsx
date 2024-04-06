@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../../../../assets/logo.png";
+import valueImg from "../../../../assets/value.png";
+import info from "../../../../assets/info.png";
 import Image from "next/image";
 import { Urbanist } from 'next/font/google';
 
@@ -33,13 +35,19 @@ function Value() {
   }
 
   const ValueCard: React.FC<Value> = ({ value, altText }) => (
-    <div className="flex flex-col justify-center items-start px-3 py-2 mt-2 text-xl font-semibold whitespace-nowrap rounded-2xl border border-solid border-neutral-600 text-zinc-50 max-md:pr-5 max-md:max-w-full">
-      <div className="flex gap-2">
+    <div className="flex flex-col justify-center items-start px-3 py-2 mt-2 text-xl font-semibold whitespace-nowrap rounded-2xl text-zinc-50 max-md:pr-5 max-md:max-w-full"
+    style={{
+      background: "linear-gradient(89.94deg, rgba(44, 43, 49, 0.6) 0.06%, rgba(34, 33, 39, 0.6) 99.97%)",
+      border: '1px solid',
+      borderImageSource:" linear-gradient(180deg, rgba(76, 75, 81, 0.6) 0%, rgba(29, 28, 34, 0) 176.62%)",
+    }}>
+      <div className="flex gap-2 justify-center items-center">
         <Image
           loading="lazy"
           src={logo}
           alt={altText}
-          className="shrink-0 w-8 border border-solid aspect-square border-zinc-800"
+          className="shrink-0 w-5 h-5 border border-solid aspect-square border-zinc-800"
+          style={{borderRadius:'50%'}}
         />
         <div className="my-auto font-semibold text-xl" style={{ fontFamily: "Urbanist" }}>{value}</div>
       </div>
@@ -51,13 +59,15 @@ function Value() {
       <div className="flex gap-0 justify-between mt-3.5 whitespace-nowrap max-md:flex-wrap">
         <div className="flex-1 text-zinc-500 max-md:max-w-full">{label}</div>
         <div className="flex gap-2 font-medium text-right uppercase text-zinc-50">
+          
           <Image
             loading="lazy"
-            src={logo}
+            src={label==="Your Farming"?logo:valueImg}
             alt={altText}
-            className="shrink-0 my-auto w-4 aspect-square"
+            className="shrink-0 my-auto w-3 aspect-square"
+            style={{borderRadius:'50%'}}
           />
-          <div>{value}</div>
+          <div>{label==="Your Farming"?"FARMING":"SOL"}</div>
         </div>
       </div>
       <ValueCard value={`$${value}`} altText={`${label} ${value}`} />
@@ -65,8 +75,14 @@ function Value() {
   );
 
   return (
-    <div className="flex flex-col grow px-8 py-9 w-full text-base border border-solid backdrop-blur-lg border-neutral-700 rounded-[32px] max-md:px-5 max-md:mt-8 max-md:max-w-full"
-    style={{background: "linear-gradient(to bottom, rgba(36, 35, 41, 0.6) , rgba(17, 16, 22, 0.31))",}}>
+    <div className="flex flex-col grow px-8 py-9 w-full text-base backdrop-blur-lg rounded-[32px] max-md:px-5 max-md:mt-8 max-md:max-w-full"
+    style={{background: "linear-gradient(to bottom, rgba(36, 35, 41, 0.6) , rgba(17, 16, 22, 0.31))",
+    border: '1px solid',
+
+    borderImageSource:' radial-gradient(79.89% 77.28% at 99.25% 98.16%, #3A393F 0%, rgba(20, 19, 25, 0) 100%)'
+    
+    
+    }}>
       <div className="text-zinc-500 max-md:max-w-full">Total Value locked</div>
       <ValueCard value="$0.000" altText="Total value" />
       {data.map((item, index) => (

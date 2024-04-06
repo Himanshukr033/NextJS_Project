@@ -1,4 +1,6 @@
 import React from "react";
+import style from './Component.module.css';
+
 
 interface CardProps {
   number: string; 
@@ -20,18 +22,17 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
     }
   };
   return (
-    <div className="flex justify-center w-full rounded-3xl backdrop-blur-lg" 
+    <div className={` ${style.cardContainer} flex justify-center w-full rounded-3xl ` }
     style={{
-      background: "linear-gradient(to bottom, rgba(36, 35, 41, 1), rgba(17, 16, 22, 1) 100%)",
-      alignItems:"center",
-      overflow:"hidden",
-      textOverflow: "ellipsis",
-      textJustify: "inter-word", textDecoration:'justify' ,padding:'40px 24px 17px 24px',boxShadow: "rgba(38, 38, 38, 0.5) 0px 6px 24px 0px, rgba(40, 40, 40, 0.9) 0px 0px 0px 1px"}}>
+      
+      
+      // boxShadow: "rgba(38, 38, 38, 0.5) 0px 6px 24px 0px, rgba(40, 40, 40, 0.9) 0px 0px 0px 1px"
+      }}>
       
       <div className="flex flex-col justify-center w-full md:flex-row items-center" >
       <div className="pl-2 p2-3 "
         style={{
-          background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%  , rgba(17, 16, 22, 0.9) 68%)",
+          background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%  , rgba(47, 46, 42, 0.9) 68%)",
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           color: "transparent",
