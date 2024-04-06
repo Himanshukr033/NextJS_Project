@@ -1,9 +1,9 @@
 import React from "react";
 import style from './Component.module.css';
-
+import { motion } from 'framer-motion';
 
 interface CardProps {
-  number: string; 
+  number: number; 
   title: string;
   description: string;
 }
@@ -22,12 +22,8 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
     }
   };
   return (
-    <div className={` ${style.cardContainer} flex justify-center w-full rounded-3xl ` }
-    style={{
-      
-      
-      // boxShadow: "rgba(38, 38, 38, 0.5) 0px 6px 24px 0px, rgba(40, 40, 40, 0.9) 0px 0px 0px 1px"
-      }}>
+    <div className={` ${style.cardContainer} ${style.animate} flex justify-center w-full rounded-3xl ` }
+    style={{ animationDelay: `${number* 0.2}s` }} >
       
       <div className="flex flex-col justify-center w-full md:flex-row items-center" >
       <div className="pl-2 p2-3 "
@@ -74,16 +70,18 @@ const Cards = () => {
   ];
 
   return (
-    <section className="max-w-screen-xl mx-auto px-4">
+    <section className={`${style.motionDiv} max-w-screen-xl mx-auto px-4`}>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         {cardData.map((card, index) => (
-          <div key={index}>
+          <div key={index}
+          >
             <Card
               number={card.number}
               title={card.title}
               description={card.description}
             />
           </div>
+        
         ))}
       </div>
     </section>

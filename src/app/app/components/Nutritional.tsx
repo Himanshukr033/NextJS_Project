@@ -18,18 +18,18 @@ interface Nutir {
 
 const NutritionalValueItem: React.FC<Nutir> = ({label, value }) => (
   <div className="flex gap-5 justify-between mt-8 max-md:flex-wrap max-md:max-w-full" 
-  style={{background: "linear-gradient(89.94deg, rgba(44, 43, 49, 0.6) 0.06%, rgba(34, 33, 39, 0.4) 99.97%)",}}>
+  style={{}}>
 
-    <input className="text-white w-full my-auto" style={{outline: "none",
+    <input disabled className="text-white w-full my-auto" style={{outline: "none",
       caretColor: "white",
       backgroundColor:'transparent',
       borderRadius:'12',
     }} type="text" id={label} name={label} placeholder={label}></input>
-    <input className="text-white w-12 my-auto text-center" style={{outline: "none",
+    <input disabled className="text-white w-12 my-auto text-center" style={{outline: "none",
       caretColor: "white",
       background: "transparent",
       borderRadius:'12',
-    }} type="text" id={label} name={label} placeholder={value}></input>
+    }} type="text" id={label} value={value} name={label} placeholder={value}></input>
   </div>
 );
 

@@ -56,6 +56,7 @@ function InviteFriendsSection() {
           referral code
         </label>
         <input
+        disabled
           type="text"
           id="referral"
           placeholder="Referral"

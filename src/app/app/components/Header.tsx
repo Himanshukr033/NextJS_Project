@@ -6,14 +6,13 @@ import globe from "../../../../assets/globe.png";
 import IconButton from '@mui/material/IconButton';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import { Button } from "@mui/material";
+import { Button, MenuItem, Select } from "@mui/material";
  
 
 
 const LanguageSelector = () => (
-  <div className="flex gap-2 my-auto text-base whitespace-nowrap">
-    <Image src={globe} alt="Language icon" width={32} height={32} />
-    <div className="flex items-center justify-center">EN</div>
+  <div className="flex gap-2 my-auto text-base whitespace-nowrap" style={{alignItems:"center",justifyContent:"center"}}>
+    <div id="google_translate_element" ></div>
   </div>
 );
 
@@ -90,5 +89,4 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;
