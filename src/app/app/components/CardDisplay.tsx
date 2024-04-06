@@ -51,18 +51,18 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
 const Cards = () => {
   const cardData = [
     {
-      number: "1",
+      number: 1,
       title: "Buy Solana Farm",
       description: "Start by using your SOL to purchases Solana Farm",
     },
     {
-      number: "2",
+      number: 2,
       title: "Compound",
       description:
         "Maximizing your rewards lies in the quantity of FSOL you hold and how frequently you compound them. The more FSOL you accumulate and the more often you reinvest your rewards, the greater the potential for earning more rewards",
     },
     {
-      number: "3",
+      number: 3,
       title: "Claim Rewards",
       description:
         "This will transfer your accumulated SOL rewards directly into your wallet.",
