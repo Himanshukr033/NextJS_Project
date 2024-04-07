@@ -4,9 +4,6 @@ import { IconButton } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import TelegramIcon from "@mui/icons-material/Telegram";
 
-// function SocialLink({ src, alt }) {
-//   return ;
-// }
 
 function Footer() {
   return (
@@ -70,11 +67,19 @@ function Footer() {
         </div>
       </div>
       <hr className="shrink-0 mt-4 h-px border border-solid bg-neutral-800 opacity-50 border-neutral-700 max-md:max-w-full" />
-      <p
-        className="mt-6 text-base leading-5 text-zinc-500 max-md:max-w-full"
+      
+     
+        <p
+        className="mt-6 text-base leading-5 text-zinc-500 max-md:max-w-full mb-0 pb-0"
         style={{ textAlign: "center" }}
       >
         Solana Farm - Copyright © 2024, All rights reserved
+      </p>
+      <p
+        className="text-zinc-500 max-md:max-w-full"
+        style={{ margin:0,textAlign: "center", fontSize:'0.55rem' }}
+      >
+        Disclaimer: Cryptocurrency may be unregulated in your jurisdiction. The value of cryptocurrencies may go down as well as up. Profits may be subject to capital gains or other taxes applicable in your jurisdiction.
       </p>
     </footer>
   );

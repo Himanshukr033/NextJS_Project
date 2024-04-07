@@ -1,13 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import logo from "../../../../assets/logo.png";
-import twit from "../../../../assets/twitter.png";
-import tel from "../../../../assets/telegram.png";
-import globe from "../../../../assets/globe.png";
 import IconButton from '@mui/material/IconButton';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import { Button, MenuItem, Select } from "@mui/material";
- 
+import { Button} from "@mui/material";
 
 
 const LanguageSelector = () => (
@@ -33,7 +29,7 @@ const ConnectWalletButton = () => (
         transform:'scale(1.03)',
         boxShadow: "rgba(255, 255, 255, 0.24) 0px 3px 8px"
 
-      }
+      },
     }}
   >
     Connect Wallet

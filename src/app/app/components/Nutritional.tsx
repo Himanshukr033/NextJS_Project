@@ -20,16 +20,17 @@ const NutritionalValueItem: React.FC<Nutir> = ({label, value }) => (
   <div className="flex gap-5 justify-between mt-8 max-md:flex-wrap max-md:max-w-full" 
   style={{}}>
 
-    <input disabled className="text-white w-full my-auto" style={{outline: "none",
+    <input   readOnly className="text-white w-full my-auto" style={{outline: "none",
       caretColor: "white",
       backgroundColor:'transparent',
       borderRadius:'12',
     }} type="text" id={label} name={label} placeholder={label}></input>
-    <input disabled className="text-white w-12 my-auto text-center" style={{outline: "none",
+    <input defaultValue={value}
+      readOnly className="text-white w-12 my-auto text-center" style={{outline: "none",
       caretColor: "white",
       background: "transparent",
       borderRadius:'12',
-    }} type="text" id={label} value={value} name={label} placeholder={value}></input>
+    }} type="text" id={label}  name={label} placeholder={value}></input>
   </div>
 );
 

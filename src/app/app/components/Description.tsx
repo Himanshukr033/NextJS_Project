@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import logo from "../../../../assets/logo.png";
 import { Button } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 const Description = () => {
