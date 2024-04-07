@@ -118,12 +118,12 @@ function Value() {
         <div className="flex-1 my-auto text-zinc-500 max-md:max-w-full">
           Your Rewards
         </div>
-        <div className="flex gap-2 font-medium text-right text-white uppercase whitespace-nowrap">
+        <div className="flex gap-2 font-medium justify-center items-center text-right text-white uppercase whitespace-nowrap">
           <Image
             loading="lazy"
-            src={logo}
+            src={valueImg}
             alt="Sol icon"
-            className="shrink-0 w-6 aspect-square"
+            className="shrink-0 w-4 h-4 aspect-square"
           />
           <div className="my-auto">Sol</div>
         </div>
