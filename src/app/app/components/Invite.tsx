@@ -26,7 +26,7 @@ function InviteFriendsSection() {
   const handleSnackbarClose = () => {
     setSnackbarOpen(false);
   };
-  const copyTextToClipboard = async (text) => {
+  const copyTextToClipboard = async (text:string) => {
     try {
       await navigator.clipboard.writeText(text);
       setCopiedText(text);
