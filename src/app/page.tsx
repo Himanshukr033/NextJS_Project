@@ -24,6 +24,7 @@ export default function Home() {
       style={{
         height: "100%",
         position: "relative",
+        overflowX: "hidden",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-evenly",
