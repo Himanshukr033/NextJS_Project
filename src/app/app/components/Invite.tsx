@@ -58,7 +58,7 @@ function InviteFriendsSection() {
         Add your friends email addresses and send them invitations to join!
       </p>
       <form
-        className="flex gap-5 justify-between py-1 pr-2 pl-2.5 mt-4 rounded-xl max-md:flex-wrap max-md:max-w-full"
+        className="flex gap-5 justify-between py-1 pr-2 pl-2.5 mt-4 rounded-xl  max-md:max-w-full"
         style={{
           maxHeight: "50px",
           boxShadow:
@@ -100,6 +100,7 @@ function InviteFriendsSection() {
             '@media (max-width: 767px)': {
               padding: '6px 20px', 
               maxHeight: '3rem',
+              fontSize:'1rem',
             },
           }}>
           Send
@@ -109,9 +110,9 @@ function InviteFriendsSection() {
         Referral Link
       </h3>
 
-      <form className="flex flex-col gap-5 justify-between rounded-xl max-md:flex-wrap max-md:max-w-full">
+      <form className="flex flex-col gap-5 justify-between rounded-xl max-md:max-w-full">
         <div
-          className="flex gap-5 justify-between rounded-xl py-1 pr-2 pl-2.5 mt-4 max-md:flex-wrap max-md:max-w-full"
+          className="flex gap-5 justify-between rounded-xl py-1 pr-2 pl-2.5 mt-4 max-md:max-w-full"
           style={{
             height: "50px",
             boxShadow:
@@ -150,8 +151,11 @@ function InviteFriendsSection() {
         <div className="flex flex-col text-zinc-500 gap-2">
             <p className="pl-2">Share the code on:</p>
         
-        <div className="flex justify-between text-xs ">
-          <div className="flex flex-col gap-1">
+        <div className="text-xsmax-w-full" style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(40px, 1fr))", 
+          gridGap: "5px"}}>
+          <div>
             <EmailShareButton
               url={copiedText}
               subject="Check out this referral code"

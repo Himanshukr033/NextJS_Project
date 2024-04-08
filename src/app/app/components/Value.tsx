@@ -82,6 +82,7 @@ function Value() {
     style={{background: "linear-gradient(to bottom, rgba(36, 35, 41, 0.6) , rgba(17, 16, 22, 0.31))",
     border: '1px solid',
     boxShadow:" rgba(255, 255, 255, 0.35) 0px 5px 15px",
+    minWidth:'280px',
 
     borderImageSource:' radial-gradient(79.89% 77.28% at 99.25% 98.16%, #3A393F 0%, rgba(20, 19, 25, 0) 100%)'    
     }}>

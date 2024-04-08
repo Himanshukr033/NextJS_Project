@@ -3,17 +3,17 @@ import { Button } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 const Description = () => {
   return (
-    <div className="font-syne justify-between p-6 max-md:px-5" style={{ borderRadius:20,border: '1px solid #3A393F', boxSizing:"border-box",
+    <div className="font-syne justify-between p-6 max-md:pt-0 max-md:px-5" style={{ borderRadius:20,border: '1px solid #3A393F', boxSizing:"border-box",
     boxShadow: "rgba(50, 50, 123, 0.45) 0px 2px 2px 2px, rgba(255, 255, 255, 0.2) 0px 3px 3px 2px",
     background: 'radial-gradient(circle, #1a1a1a 20%, #000000 80%)',
     }}>
-      <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+      <div className="flex gap-5 max-md:flex-col items-end max-md:items-start max-md:gap-0">
         <div className="flex flex-col w-[82%] max-md:ml-0 max-md:w-full">
-          <section className="flex flex-col grow text-white max-md:mt-10 max-md:max-w-full">
+          <section className="flex flex-col max-md:items-center grow text-white max-md:mt-6 max-md:max-w-full">
             <h1 className="text-5xl font-medium max-md:max-w-full max-md:text-4xl">
               Solana Farming
             </h1>
-            <p className="mt-6 text-2xl max-md:max-w-full" style={{color:'#BFBFBF'}}>
+            <p className="mt-6 text-2xl max-md:text-xl max-md:max-w-full" style={{color:'#BFBFBF'}}>
               <span>
                 The SOL reward pool with the richest daily return and lowest dev fee, daily income of up to{" "}
               </span>
@@ -22,7 +22,7 @@ const Description = () => {
               <span className="font-medium text-white">12%</span>
             </p>
             <hr className="shrink-0 mt-4 h-px border border-solid bg-zinc-800 border-zinc-800 max-md:max-w-full" style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.2) inset"}} />
-            <p className="mt-4 max-md:max-w-full text-xl" style={{color: '#BFBFBF',}}>
+            <p className="mt-4 max-md:max-w-full text-xl max-md:text-base" style={{color: '#BFBFBF',}}>
               The key to maximizing your rewards lies in the quantity of FSOL you hold and how frequently you compound them. The more FSOL you accumulate and the more often you reinvest your rewards, the greater the potential for earning more rewards.
             </p>
           </section>
