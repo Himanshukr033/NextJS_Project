@@ -40,12 +40,15 @@ const Header = () => {
 
   return (
     <header className="flex gap-5 justify-between pr-2 max-md:flex-col">
-      <div className="flex gap-4 text-2xl font-medium text-white items-center">
+      <div className="flex gap-4 text-2xl font-medium text-white items-center justify-between">
+        <div className="flex gap-4 text-2xl font-medium text-white items-center">
+
         <Image src={logo} alt="Solana Farm logo" width={48} height={48} />
         <h1 className="my-auto">Solana Farm</h1>
+        </div>
         <LanguageSelector />
       </div>
-      <div className="flex items-center gap-4 max-md:w-screen">
+      <div className="flex items-center gap-4 max-md:w-screen justify-between ">
         <IconButton
           aria-label="Twitter Icon" 
           sx={{

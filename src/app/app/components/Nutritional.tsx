@@ -38,12 +38,12 @@ const Nutritional = () => {
   return (
     <section style={{
       background: "radial-gradient(114.61% 114.61% at 50% 0%, #242329 0%, #111016 100%)",
-      }} className="flex flex-col justify-center px-8 py-8 text-xl border border-solid backdrop-blur-lg border-neutral-700 rounded-[32px] max-md:px-5 max-md:max-w-full">
+      }} className="flex flex-col justify-center px-8 py-8 text-xl border border-solid backdrop-blur-lg border-neutral-700 rounded-[32px] max-md:p-2 max-md:max-w-full">
       <div style={{
         // boxShadow: "1px 2px 0px rgba(5, 5, 6, 0.5), -1px -2px 0px rgba(55, 55, 63, 0.5)",
         boxShadow:" rgba(255, 255, 255, 0.25) 0px 2px 3px -5px, rgba(255, 255, 255, 0.3) 0px 2px 4px -5px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset",
  background: "linear-gradient(to bottom, rgba(36, 35, 41, 1) , rgba(17, 16, 22, 1))",}}
-     className="flex flex-col justify-center px-8 py-8 rounded-3xl  backdrop-blur-lg  max-md:px-5 max-md:max-w-full">
+     className="flex flex-col justify-center px-8 py-8 rounded-3xl  backdrop-blur-lg  max-md:px-2 max-md:max-w-full">
         <header className="flex gap-4 justify-between px-px text-2xl max-md:text=xl font-bold text-white max-md:flex-wrap max-md:max-w-full">
           <h2>Nutritional Values</h2>
           <button>

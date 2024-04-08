@@ -20,23 +20,24 @@ export default function Home() {
 
   return (
     <main
+      className="w-80vw max-md:w-95vw"
       style={{
         height: "100%",
         position: "relative",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-evenly",
-        width: "80vw",
         margin: "auto",
         gap:50,
-        padding:'30px 0px'
+        padding:'30px 0px',
+        msOverflowX:"hidden",
       }}
     >
       {isClient ?(
         <>
       <Header />
       <Description />
-      <div style={{ display: "flex", flexDirection: "column", padding:'30px 20px', gap:'30px',
+      <div className=" px-7 py-5 max-md:p-3" style={{ display: "flex", flexDirection: "column", gap:'30px',
       borderRadius:'20px',
       background: "radial-gradient(116.56% 116.56% at 52.31% -19.68%, #232228 0%, rgba(18, 17, 23, 0.31) 100%)",
       }}>
@@ -56,6 +57,11 @@ export default function Home() {
       <Footer />
       </>)
       : ''}
+      
     </main>
+
+
+
   );
+  
 }

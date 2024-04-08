@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ number, title, description }) => {
     <div className={` ${style.cardContainer} ${style.animate} flex justify-center min-w-60 w-full rounded-3xl ` }
     style={{ animationDelay: `${number* 0.2}s` }} >
       
-      <div className="flex flex-col justify-center w-full md:flex-row items-center " >
+      <div className="flex flex-col justify-center w-full max-md:m-0 md:flex-row items-center " >
       <div className="pl-2 pt-3 max-md:p-0 self-center justify-self-center text-8xl max-md:text-7xl"
         style={{
           background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%  , rgba(47, 46, 42, 0.9) 68%)",
